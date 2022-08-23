@@ -1,13 +1,7 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-
+import React from "react";
+import ReactDom from "react-dom";
+// App.jsをインポート
 import App from "./App";
 
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
-
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+// ここでAppを呼び出してる
+ReactDom.render(<App />, document.getElementById("root"));
